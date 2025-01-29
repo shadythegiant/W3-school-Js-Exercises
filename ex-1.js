@@ -6,7 +6,7 @@ const Day = new Date();
 let hour = Day.getHours(); 
 const Minuets = Day.getMinutes(); 
 const seconds = Day.getSeconds(); 
-const today =  Day.getDay(); 
+const today =  Day.getUTCDay(); 
 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
@@ -16,5 +16,5 @@ const PMconditional = hour >= 12 ? "PM" : "AM";
 hour = hour >= 12 ? hour - 12 : hour; 
 
 const time = `${hour} ${PMconditional} : ${Minuets} : ${seconds}`; 
-console.log(typeof hour)
+//console.log(typeof hour)
 console.log(`today is ${days[today]} \n current time is : ${time}`);

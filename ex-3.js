@@ -7,7 +7,7 @@ function rotateSTR() {
   setInterval(() => {
     text = text[text.length - 1] + text.substring(0, text.length - 1);
     element.innerHTML = text;
-  }, 100);
+  }, 1000);
 }
 
 rotateSTR();
